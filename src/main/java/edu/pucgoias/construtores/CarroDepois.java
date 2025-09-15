@@ -4,10 +4,14 @@ public class CarroDepois {
     String marca;
     String modelo;
     int ano;
+    String cor = "VERMELHO"; // code smell
+    double preco;
+    boolean temEscada;
+    double quilometragem;
 
     // Construtor padrão (sem parâmetros)
     public CarroDepois() {
-        System.out.println("Um novo objeto Carro foi criado!");
+
     }
 
     // Construtor com parâmetros para inicializar os atributos
@@ -15,6 +19,16 @@ public class CarroDepois {
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
+    }
+
+    public CarroDepois(String marca, String modelo, int ano, String cor, double preco, boolean temEscada, double quilometragem) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+        this.cor = cor;
+        this.preco = preco;
+        this.temEscada = temEscada;
+        this.quilometragem = quilometragem;
     }
 
     public void exibirDetalhes() {
